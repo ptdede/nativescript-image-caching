@@ -1,7 +1,7 @@
 import * as imageSrc from 'tns-core-modules/image-source';
 import { View, layout } from 'tns-core-modules/ui/core/view';
-import { ImageCacheBase } from './image-cache.common';
-import * as common from './image-cache.common'
+import { ImageCacheBase } from './image-caching.common';
+import * as common from './image-caching.common'
 global.moduleMerge(common, exports)
 
 export class ImageCache extends ImageCacheBase {

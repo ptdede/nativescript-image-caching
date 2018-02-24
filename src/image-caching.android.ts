@@ -1,6 +1,6 @@
 import * as imageSrc from 'tns-core-modules/image-source';
-import * as common from './image-cache.common';
-import {ImageCacheBase} from "./image-cache.common";
+import * as common from './image-caching.common';
+import {ImageCacheBase} from "./image-caching.common";
 import Glide = com.bumptech.glide.Glide
 
 global.moduleMerge(common, exports)

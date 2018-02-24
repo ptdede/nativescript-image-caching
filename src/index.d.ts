@@ -1,4 +1,4 @@
-import {ImageCacheBase} from './image-cache.common';
+import {ImageCacheBase} from './image-caching.common';
 export declare class ImageCache extends ImageCacheBase {
   // define your typings manually
   // or..
