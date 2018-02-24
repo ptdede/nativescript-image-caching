@@ -1,6 +1,6 @@
 {
     "name": "nativescript-image-caching",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Nativescript image caching using Glide(v3) and SDWebImage",
     "main": "image-caching",
     "typings": "index.d.ts",
@@ -30,9 +30,7 @@
         "demo.reset": "cd ../demo && rimraf platforms",
         "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-image-caching && tns plugin add ../src",
         "clean": "cd ../demo && rimraf hooks node_modules platforms && cd ../src && rimraf node_modules && npm run plugin.link",
-        "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
-        "postinstall": "node postinstall.js",
-        "preuninstall": "node preuninstall.js"
+        "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'"
     },
     "keywords": [
         "NativeScript",
@@ -58,8 +56,6 @@
         "rimraf": "^2.5.0",
         "tslint": "^5.0.0"
     },
-    "dependencies": {
-        "nativescript-hook": "^0.2.2"
-    },
+    "dependencies": {},
     "bootstrapper": "nativescript-plugin-seed"
 }
