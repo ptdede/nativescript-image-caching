@@ -1,28 +1,29 @@
-import { Observable } from 'tns-core-modules/data/observable';
-import * as app from 'tns-core-modules/application';
-import * as dialogs from 'tns-core-modules/ui/dialogs';
+import {View} from 'tns-core-modules/ui/core/view'
+import {Property} from "tns-core-modules/ui/core/properties";
 
-export class Common extends Observable {
-  public message: string;
+export const srcProperty = new Property<ImageCacheBase, string>({
+    name: 'src'
+})
 
-  constructor() {
-    super();
-    this.message = Utils.SUCCESS_MSG();
-  }
+export const placeholderProperty = new Property<ImageCacheBase, string>({
+    name: 'placeholder'
+})
 
-  public greet() {
-    return "Hello, NS";
-  }
+export const loadingProperty = new Property<ImageCacheBase, boolean>({
+    name: 'loading'
+})
+
+export class ImageCacheBase extends View {
+
+    public src: string
+    public placeholder: string
+    public loading: boolean
+
+    constructor() {
+        super();
+    }
 }
 
-export class Utils {
-  public static SUCCESS_MSG(): string {
-    let msg = `Your plugin is working on ${app.android ? 'Android' : 'iOS'}.`;
-
-    setTimeout(() => {
-      dialogs.alert(`${msg} For real. It's really working :)`).then(() => console.log(`Dialog closed.`));
-    }, 2000);
-
-    return msg;
-  }
-}
+srcProperty.register(ImageCacheBase)
+placeholderProperty.register(ImageCacheBase)
+loadingProperty.register(ImageCacheBase)

@@ -1,6 +1,11 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page"
   xmlns:ui="nativescript-image-cache">
   <StackLayout class="p-20">
-    <Label text="{{ message }}" class="t-20 text-center c-black" textWrap="true"/>
+      <label text="test image"></label>
+      <ui:ImageCache src="http://lorempixel.com/2000/2000/sports"
+                     loading="true"
+                     width="100%"
+                     height="210"/>
   </StackLayout>
 </Page>
+

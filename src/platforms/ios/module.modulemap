@@ -1,0 +1,4 @@
+module SDWebImage {
+    umbrella "../Pods/SDWebImage/Sources"
+    export *
+}

@@ -1,5 +1,6 @@
 import { Observable } from 'tns-core-modules/data/observable';
 import { ImageCache } from 'nativescript-image-cache';
+import { getRandomInt } from './utils/functions/general'
 
 export class HelloWorldModel extends Observable {
   public message: string;
@@ -9,6 +10,9 @@ export class HelloWorldModel extends Observable {
     super();
 
     this.imageCache = new ImageCache();
-    this.message = this.imageCache.message;
   }
+
+    getRandomInt() {
+      return getRandomInt(1, 10000)
+    }
 }
