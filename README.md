@@ -1,12 +1,13 @@
+
 # Nativescript Image Caching
 
 Image Caching that use Glide(v3) for android and SDWebImage(v4) for ios
 
 
-## caution!
+## CAUTION!
 this plugin is under development, i really appreciate pull request and contribution in this repo. Thanks!
 
-inspired from nativescript-image-cache-it
+inspired from nativescript-image-cache-it  </br>
 they used Picasso rather than Glide.
 
 ## Installation
@@ -15,7 +16,7 @@ they used Picasso rather than Glide.
 tns plugin add nativescript-image-caching
 ```
 
-## Usage 
+## Usage
 
 ```javascript
   <ImageCache src="http://lorempixel.com/2000/2000/sports"
@@ -34,11 +35,9 @@ registerElement('ImageCache', () => require('nativescript-image-caching').ImageC
 
 ## API
 
-Describe your plugin methods and properties here. See [nativescript-feedback](https://github.com/EddyVerbruggen/nativescript-feedback) for example.
-    
 | Property | Default | Description |
 | --- | --- | --- |
-| src | - | required |
+| src | - | (required) link url of an image |
     
 ## License
 
