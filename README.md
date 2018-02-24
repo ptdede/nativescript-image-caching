@@ -17,20 +17,20 @@ tns plugin add nativescript-image-caching
 
 ## Usage 
 
-	```javascript
-      <ImageCache src="http://lorempixel.com/2000/2000/sports"
-                  width="100%"
-                  height="210"/>
-    ```
+```javascript
+  <ImageCache src="http://lorempixel.com/2000/2000/sports"
+              width="100%"
+              height="210"/>
+```
 
 ## IMPORTANT FOR ANGULAR
 
-    inside your app module. insert:
+inside your app module. insert:
 
-	```javascript
-    import { registerElement } from 'nativescript-angular/element-registry';
-    registerElement('ImageCache', () => require('nativescript-image-caching').ImageCache);
-    ```
+```javascript
+import { registerElement } from 'nativescript-angular/element-registry';
+registerElement('ImageCache', () => require('nativescript-image-caching').ImageCache);
+```
 
 ## API
 
