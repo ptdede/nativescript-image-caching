@@ -39,6 +39,6 @@ export class ImageCache extends ImageCacheBase {
             )
         }
 
-        glide.into(this.nativeView)
+        if (this.nativeView) glide.into(this.nativeView)
     }
 }
